@@ -3,4 +3,8 @@ node default {
     ensure => file,
     content => 'This is a readme',
   }
+  file { '/root/test':
+    ensure => file,
+    content => 'This is a readme',
+  }
 }
