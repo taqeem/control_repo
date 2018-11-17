@@ -3,7 +3,7 @@ node default {
     ensure => file,
     content => '',
   }
-  file { '/root/test/README':
+  file { '/root/README':
     ensure => file,
     owner => 'root',
   }
