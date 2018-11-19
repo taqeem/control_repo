@@ -7,4 +7,5 @@ node default {
     ensure => file,
     owner => 'root',
   }
+  notify {'Hellow World':}
 }
