@@ -1,6 +1,6 @@
 node default {
   file { '/root/README':
-    ensure => absent,
+    ensure => present,
     content => '',
   }
   file { '/root/README1':
