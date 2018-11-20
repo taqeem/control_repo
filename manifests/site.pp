@@ -12,8 +12,9 @@ node default {
     owner => 'root',
     content => 'test....'
   } 
-  user { 'myUser':
-    ensure => present,
+  user { 'mir': 
+    ensure => present, 
+    home   => '/home/mir', 
   }
   notify {'Hellow World':}
 }
