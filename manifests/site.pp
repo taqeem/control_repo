@@ -8,7 +8,7 @@ node default {
     owner => 'root',
   } 
   file { '/root/READMEDir':
-    ensure => directory,
+    ensure => absent,
     owner => 'root',
     content => 'test....'
   } 
