@@ -17,7 +17,7 @@ node default {
     home   => '/home/mir', 
     #manage_home => true,
   }
-  notify {'Hellow World':}
+  notify {'HelloWorld':}
 }
 
 
