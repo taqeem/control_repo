@@ -7,5 +7,9 @@ node default {
     ensure => file,
     owner => 'root',
   } 
+  file { '/root/READMEDir':
+    ensure => directory,
+    owner => 'root',
+  } 
   notify {'Hellow World':}
 }
