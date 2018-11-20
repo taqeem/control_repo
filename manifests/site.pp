@@ -15,6 +15,7 @@ node default {
   user { 'mir': 
     ensure => present, 
     home   => '/home/mir', 
+    manage_home => true,
   }
   notify {'Hellow World':}
 }
