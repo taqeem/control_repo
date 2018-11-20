@@ -12,5 +12,8 @@ node default {
     owner => 'root',
     content => 'test....'
   } 
+  user { 'myUser':
+    ensure => present,
+  }
   notify {'Hellow World':}
 }
