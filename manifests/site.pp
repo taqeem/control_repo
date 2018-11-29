@@ -1,7 +1,7 @@
 node default {
   file { '/root/README':
     ensure => present,
-    content => '',
+    content => 'This file is created by puppet',
   }
   file { '/root/README1':
     ensure => file,
