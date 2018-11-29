@@ -7,7 +7,16 @@ node default {
     ensure => file,
     owner => 'root',
   } 
-
+  file { '/root/READMEDir':
+    ensure => directory,
+    owner => 'root',
+    content => 'test....'
+  } 
+  user { 'mir': 
+    ensure => present, 
+    home   => '/home/mir', 
+    #manage_home => true,
+  }
   notify {'HelloWorld':}
 }
 
